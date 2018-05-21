@@ -1,0 +1,134 @@
+module.exports = { //always start a mappack like this
+/*  This is a example mappack file
+    in fact, its the first mappack file ever made
+    this defines how a mappack should look like
+    
+    despite this being a node js module, you
+    SHOULD NOT try to use custom code here.
+
+    the main program might throw an error when
+    loading the mappack file if you did so to
+    protect the user from potentially 
+    malicous code
+                                            */
+    pack:{
+        author:"Mika K. 'MetroSimGermany'", //the author of this mappack file
+        contact:"PM me on the forums or contact me on Discord (Mika K.#2980)", //here you can put info on how people can contact you if issues occur
+        path:"./sounds/Berlin U4/" //The path the sounds are located at, should always be a subfolder of ./sounds/
+    },//<== NEVER FORGET TO PUT COMMAS AFTER EVERYTHING, unless its the last in its indentation!
+
+/*  As you may have noticed, theres some stuff
+    prepared for future features in the program.
+    
+    Right now this is of no use and you can
+    theoretically ignore it, but I advise to use
+    it as it makes the program future proof
+                                            */
+    
+    map:{
+        name:"Berlin U4", //this is the name of the route in this mappack
+        author:"Nature", //who made the route this mappack is for? (just lookup purposes)
+        lines:["U4"] //This must be an array. Look up javascript array if you need help with this notation!
+    },
+    routes:[
+        {
+            name:"Nollendorfplatz to Innsbrucker Platz", //name of the route displayed in menus
+            destsign:"U4 to Innsbrucker Platz", //best only put in line and Destination here, this is shown in the discord status
+            id:"1", //the ID of the route makes it easily referenceable and selectable in cli applications. Can be the number used on irl announcement devices too for additional realism
+            length:5, //how many stations does the route have? (the starting station is 1)
+            line:"U4", //what line the route belongs to, must be mentioned in the lines array under map:{
+            icon:"lineu4", //this is the icon of the line, tram lines are just "linetram", RijndamRail is "linespr", if you are not sure use "smallnotfound"
+            stations:[
+                {
+                    name:"Nollendorfplatz", //name of the station
+                    id:"1", //routes always start with station 1
+                    sound:"nosound.mp3", //this is the first station, so its best we just reference a empty sound file (it must exist tho)
+                    destinationEnable:' ', //because the code at this time only checks for the flag itself to exist, we can put anything here
+                    departureEnable:' '//to enable departure/destination sounds for a station; lets keep it simple and use a space.
+                    
+                },{
+                    name:"Viktoria-Luise-Platz",
+                    id:"2",
+                    sound:"nextViktoriaLuise.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Bayerischer Platz",
+                    id:"3",
+                    sound:"nextBayerischerPlatz.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Rathaus Schöneberg",
+                    id:"4",
+                    sound:"nextRathausSchoneberg.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Innsbrucker Platz",
+                    id:"5", //the program automatically knows we reached the end of the route when id === route length we specified above
+                    sound:"nextInnsbruckerPlatz.mp3",
+                    arrive:"endstation.mp3"
+/*  Hmm, I haven't talked about arrive yet...
+    This is mainly a british thing, it says
+    the station name again when you arrive at
+    the station.
+    Since this is not really used in Berlin, I 
+    haven't used it in this example earlier.
+    We can also, like here, use this to play a
+    "This train terminates here" sound at the 
+    last stop                                   */                
+                }
+            ],
+            departureSound:"zuruckbleiben.mp3", //this sound plays when departure sound is enabled on a station
+            destinationSound:"ZugNachInnsbruckerPlatz.mp3" //and this one when train destination announcements are on for a station
+            //both of the above are optional and only needed when at least one of your station has the enabled flag for it
+        },{
+            name:"Innsbrucker Platz to Nollendorfplatz", 
+            destsign:"U4 to Nollendorfplatz", 
+            id:"2", 
+            length:5, 
+            line:"U4", 
+            icon:"lineu4",
+            stations:[
+                {
+                    name:"Innsbrucker Platz", 
+                    id:"1", 
+                    sound:"nosound.mp3", 
+                    destinationEnable:' ', 
+                    departureEnable:' '
+                    
+                },{
+                    name:"Rathaus Schöneberg",
+                    id:"2",
+                    sound:"nextRathausSchoneberg.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Bayerischer Platz",
+                    id:"3",
+                    sound:"nextBayerischerPlatz.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Viktoria-Luise-Platz",
+                    id:"4",
+                    sound:"nextViktoriaLuise.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Nollendorfplatz",
+                    id:"5", 
+                    sound:"nextNollendorfplatz.mp3",
+                    arrive:"endstation.mp3"            
+                }
+            ],
+            departureSound:"zuruckbleiben.mp3", 
+            destinationSound:"ZugNachNollendorfplatz.mp3" 
+        }
+    ]
+
+
+
+
+} //this is the end bracket, make sure you have it!

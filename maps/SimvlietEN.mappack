@@ -1,0 +1,250 @@
+module.exports = {
+    pack:{
+        author:"Mika K. 'MetroSimGermany'", 
+        contact:"PM me on the forums or contact me on Discord (Mika K.#2980)",
+        path:"./sounds/SimvlietLU/"
+    },
+    map:{
+        name:"MetroRegio Simvliet (ENG)",
+        author:"Michiel", 
+        lines:["A","B","C"] 
+    },
+    routes:[
+        {
+            name:"Simvliet Airport --> Araplein", 
+            destsign:"A to Araplein", 
+            id:"TA", 
+            length:15, 
+            line:"A", 
+            icon:"linea",
+            //firstEnable:' ', 
+            stations:[
+                {
+                    name:"Simvliet Airport", 
+                    id:"1", 
+                    sound:"nosound.mp3", 
+                    destinationEnable:' ', 
+                    departureEnable:' '
+                    
+                },{
+                    name:"Simvliet WTC",
+                    id:"2",
+                    sound:"nextwtc.mp3",
+                    arrive:"thiswtc.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Universiteit",
+                    id:"3",
+                    sound:"nextuniversiteit.mp3",
+                    arrive:"thisuniversiteit.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Westpark",
+                    id:"4",
+                    sound:"nextwestpark.mp3",
+                    arrive:"thiswestpark.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Simvliet Centrum",
+                    id:"5", 
+                    sound:"nextcentrum.mp3",
+                    arrive:"thiscentrum.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '          
+                },{
+                    name:"Alexanderpark",
+                    id:"6",
+                    sound:"nextalexanderpark.mp3",
+                    arrive:"thisalexanderpark.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Kruidveldlaan",
+                    id:"7",
+                    sound:"nextkruidveltlaan.mp3",
+                    arrive:"thiskruidveltlaan.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"De Bergen",
+                    id:"8",
+                    sound:"nextdebergen.mp3",
+                    arrive:"thisdebergen.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Vismarkt",
+                    id:"9",
+                    sound:"nextvismarkt.mp3",
+                    arrive:"thisvismarkt.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Rooseveltlaan",
+                    id:"10",
+                    sound:"nextrooseveltlaan.mp3",
+                    arrive:"thisrooseveltlaan.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Stadionweg",
+                    id:"11",
+                    sound:"nextstadionwega.mp3",
+                    arrive:"thisstadionweg.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Noordplein",
+                    id:"12",
+                    sound:"nextnoordplein.mp3",
+                    arrive:"thisnoordplein.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Varenweg",
+                    id:"13",
+                    sound:"nextvarenweg.mp3",
+                    arrive:"thisvarenweg.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Springstraat",
+                    id:"14",
+                    sound:"nextspringstraat.mp3",
+                    arrive:"thisspringstraat.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Araplein",
+                    id:"15",
+                    sound:"nextraplein.mp3",
+                    arrive:"thisaraplein.mp3"
+                }
+            ],
+            departureSound:"doorsnew.mp3", 
+            destinationSound:"toaraplein.mp3"
+        },{
+            name:"Araplein --> Simvliet Airport", 
+            destsign:"A to Simvliet Airport", 
+            id:"AT", 
+            length:15, 
+            line:"A", 
+            icon:"linea",
+            stations:[
+                {
+                    name:"Araplein", 
+                    id:"1", 
+                    sound:"nosound.mp3", 
+                    destinationEnable:' ', 
+                    departureEnable:' '
+                    
+                },{
+                    name:"Springstraat",
+                    id:"2",
+                    sound:"nextspringstraat.mp3",
+                    arrive:"thisspringstraat.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Varenweg",
+                    id:"3",
+                    sound:"nextvarenweg.mp3",
+                    arrive:"thisvarenweg.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Noordplein",
+                    id:"4",
+                    sound:"nextnoordplein.mp3",
+                    arrive:"thisnoordplein.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Stadionweg",
+                    id:"5", 
+                    sound:"nextstadionwega.mp3",
+                    arrive:"thisstadionweg.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Rooseveltlaan",
+                    id:"6",
+                    sound:"nextrooseveltlaan.mp3",
+                    arrive:"thisrooseveltlaan.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Vismarkt",
+                    id:"7",
+                    sound:"nextvismarkt.mp3",
+                    arrive:"thisvismarkt.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"De Bergen",
+                    id:"8",
+                    sound:"nextdebergen.mp3",
+                    arrive:"thisdebergen.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Kruidveldlaan",
+                    id:"9",
+                    sound:"nextkruidveltlaan.mp3",
+                    arrive:"thiskruidveltlaan.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Alexanderpark",
+                    id:"10",
+                    sound:"nextalexanderpark.mp3",
+                    arrive:"thisalexanderpark.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Simvliet Centrum",        
+                    id:"11",
+                    sound:"nextcentrum.mp3",
+                    arrive:"thiscentrum.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Westpark",
+                    id:"12",
+                    sound:"nextwestpark.mp3",
+                    arrive:"thiswestpark.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Universiteit",
+                    id:"13",
+                    sound:"nextuniversiteit.mp3",
+                    arrive:"thisuniversity.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Simvliet WTC",
+                    id:"14",
+                    sound:"nextwtc.mp3",
+                    arrive:"thiswtc.mp3",
+                    destinationEnable:' ',
+                    departureEnable:' '
+                },{
+                    name:"Simvliet Airport",
+                    id:"15",
+                    sound:"nextairport.mp3",
+                    arrive:"thisairport.mp3"           
+                }
+            ],
+            departureSound:"doorsnew.mp3", 
+            destinationSound:"toairport.mp3" 
+        }
+    ]
+
+
+
+
+} 
