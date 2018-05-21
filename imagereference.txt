@@ -1,0 +1,34 @@
+This text file lists all available images
+
+
+--==Small images==--
+linea - Line A
+lineair - Airport Shuttle
+lineb - Line B
+linec - Line C
+linem1 - Line M1
+linem2 - Line M2
+linem3 - Line M3
+linem4 - Line M4
+linem5 - Line M5
+linem6 - Line M6
+linespr - Rijndam Rail Sprinter
+linetram - Tram
+lineu4 - Berlin U4 (only for testing purposes)
+smallnotfound - small question mark icon
+
+--==Large images==--
+train81717 - 81-717 Metro
+traina3l92 - Berlin A3L92 Metro (only for testing purposes)
+trainair - Airport Shuttle
+trainhsm - HSM Train
+trainmg2 - MG2 Train
+trainrsg3 - RSG 3 Train
+trainsg2 - SG 2 Train
+trainsg21 - SG 2/1 Train
+trainsg3 - SG 3 Train
+trainsg4 - Rijndam Rail train
+traintram - Generic image for all KTM Trams
+
+
+List might be extended in the future
