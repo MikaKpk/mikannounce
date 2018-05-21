@@ -9,8 +9,11 @@ I have kind of lost interest in continuing developement on this so I encourage y
 
 Currently on the Todo list:
 \> Use electron for a graphical interface
+
 \> better keypress detection
+
 \> establish activity file format (which overall will just contain a collection of routes for a mappack and a associated train)
+
 \> clean up some spaghetti (Mario will be sad :( )
 
 **Usage**
@@ -32,6 +35,8 @@ Commands
 For reference, a commented mapfile can be found, which is the U4 Berlin. That line exists in reality, but not in the game. However, since it only has 5 stations it was chosen as a example and test line.
 
 **Dependencies**
+
 Mikannounce requires discord-rpc to be installed using `npm install discord-rpc`
+
 To play any sound, mpg123 is needed https://www.mpg123.de/download.shtml, but technically it can be used with any command line based media player, if you find a better one, message me.
 And most importantly you need Node JS to be installed for this to run.
