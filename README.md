@@ -8,10 +8,10 @@ For MetroSim specifically this supports displaying a image of the current train 
 I have kind of lost interest in continuing developement on this so I encourage you to contribute to the project.
 
 Currently on the Todo list:
-> Use electron for a graphical interface
-> better keypress detection
-> establish activity file format (which overall will just contain a collection of routes for a mappack and a associated train)
-> clean up some spaghetti (Mario will be sad :( )
+\> Use electron for a graphical interface
+\> better keypress detection
+\> establish activity file format (which overall will just contain a collection of routes for a mappack and a associated train)
+\> clean up some spaghetti (Mario will be sad :( )
 
 **Usage**
 
